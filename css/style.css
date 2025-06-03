@@ -1,0 +1,117 @@
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #fca311;
+  }
+
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+  }
+  input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+
+  /* Cambiar fondo: puede ser color o imagen */
+body {
+  background: url('../img/fondo1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  /* fallback color si la imagen no carga */
+  background-color: white; /* celeste */
+  color: white; /* texto blanco para buen contraste */
+}
+
+/* Cambiar color principal de Bootstrap (navbar) */
+/* Sobrescribimos variables CSS de Bootstrap */
+
+:root {
+  --bs-primary: #2353f1; /* celeste */
+  --bs-primary-rgb: 13, 202, 240;
+}
+
+/* Personalización extra */
+
+.navbar-brand img {
+  filter: brightness(0) invert(1); /* si tu logo es oscuro, se vuelve blanco */
+}
+
+/* Card con fondo blanco y texto negro */
+.card {
+  background-color: white;
+  color: black;
+}
+
+#carouselCoolShoes .carousel-item {
+  height: 500px; /* ajustá según lo que prefieras */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Asegura que la imagen se recorte bien */
+#carouselCoolShoes .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.running-header {
+  background-image: url('../img/fondo01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.futbol-header {
+  background-image: url('../img/fondo05.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.urbanas-header {
+  background-image: url('../img/fondo02.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.running-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.custom-navbar {
+  background-color: #2353f1 !important; /* o el celeste que uses */
+}
+
+footer.bg-primary {
+  background-color: #2353f1 !important;
+}
+
+.text-azul {
+  color: #2353f1;
+}
+
+.text-negro {
+  color: black;
+}
