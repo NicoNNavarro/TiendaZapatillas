@@ -115,3 +115,80 @@ footer.bg-primary {
 .text-negro {
   color: black;
 }
+
+
+/* Esta aparte es el estilo de la botonera de cantidad*/
+
+/* Cards con ancho y alto fijo, y margen para separación */
+.card-custom {
+  width: 320px;
+  height: 420px;
+  margin: 0 15px 30px;
+}
+
+/* Imagen en card con altura fija y que no se distorsione */
+.card-custom img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Contenedor de botones + input cantidad */
+.cantidad-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  max-width: 120px;
+  margin: 0 auto 1rem auto;
+}
+
+/* Botones + y - */
+.cantidad-control button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cantidad-control button:hover {
+  background-color: #0056b3;
+}
+
+/* Input que muestra la cantidad */
+.cantidad-control input {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 16px;
+  pointer-events: none; /* no editable */
+  background-color: #f8f9fa;
+  user-select: none;
+}
+
+/* Para que las cards se alineen con espacio entre ellas */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* separación más grande entre cards */
+}
+
+.btn-disminuir,
+.btn-aumentar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;  /* para que el signo resalte */
+  font-size: 1.2rem;  /* ajustá el tamaño si querés */
+  padding: 0.25rem 0; /* menos padding horizontal para que no quede muy ancho */
+  width: 30px;        /* o el ancho que tengas en tus botones */
+  height: 30px;       /* que quede cuadrado */
+}
