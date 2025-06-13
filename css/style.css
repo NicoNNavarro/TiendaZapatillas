@@ -192,3 +192,22 @@ footer.bg-primary {
   width: 30px;        /* o el ancho que tengas en tus botones */
   height: 30px;       /* que quede cuadrado */
 }
+
+.categoria-header {
+  background: linear-gradient(to right, 	#808080 0%, #ffffff 100%); /* gris más oscuro */
+  color: white; /* letras blancas */
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: left;
+
+  /* Sin hover */
+  transition: none;
+}
+
+.categoria-header:hover {
+  transform: none;
+  box-shadow: none;
+}
