@@ -11,10 +11,10 @@
     rel="stylesheet"
   />
 
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-categoria="Fútbol">
+
  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
     <div class="container">
@@ -38,18 +38,19 @@
     </div>
   </nav>
 
-  <!-- Cabecera con fondo -->
+
   <header class="futbol-header d-flex align-items-center justify-content-center">
     <h1 class="running-title text-white">FÚTBOL</h1>
   </header>
 
 
-    <!-- Contenido principal -->
 <main class="container text-center py-5 text-white">
   <h1 class="mb-3 text-azul">Tenemos muchas opciones para vos. 👟</h1>
   <p class="lead mb-5 text-dark">Elegí el que más se acomodé a tu estilo.</p>
 
-  <section id="productosPorCategoria"></section>
+  <section id="productosPorCategoria" class="row justify-content-center">
+    <!-- Aqca se cargarán las cards  -->
+  </section>
 </main>
 
     <footer class="footer bg-primary text-white text-center py-2">
@@ -58,7 +59,7 @@
   </div>
 </footer>
 
-  <!-- Aquí podrías agregar el contenido específico de esta categoría -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/contadorCarrito.js"></script>

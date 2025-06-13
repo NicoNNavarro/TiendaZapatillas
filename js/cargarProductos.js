@@ -7,8 +7,7 @@ function cargarProductos() {
             const section = document.getElementById('productosPorCategoria');
             section.innerHTML = '';
 
-            // Si hay categoría en la página (cat específicas), sólo esa
-            // Si no, muestra todas las categorías
+
             const categorias = categoriaActual ? [categoriaActual] : ['Fútbol', 'Running', 'Urbanas'];
 
                 categorias.forEach(categoria => {
@@ -17,17 +16,17 @@ function cargarProductos() {
                     if (categoriaActual && ['Fútbol', 'Running', 'Urbanas'].includes(categoria)) {
                         productosFiltrados = productosFiltrados.slice(0, 8);
                     } else {
-                            productosFiltrados = productosFiltrados.slice(0, 4); // Mostrar solo 4 en index
+                            productosFiltrados = productosFiltrados.slice(0, 4); // Muestra solo 4 en el index
                          }
 
-                // En la página index mostramos el título, en las categorías no
+
                 if (!categoriaActual) {
                     section.insertAdjacentHTML('beforeend', `
                         <h2 class="categoria-header text-center mb-4">${categoria}</h2>
                         <div class="row justify-content-center"></div>
                     `);
                 } else {
-                    // Sólo agregamos la fila para las cards, sin título
+                    // Solo se agrega la fila para las cards
                     section.insertAdjacentHTML('beforeend', `<div class="row justify-content-center"></div>`);
                 }
 
