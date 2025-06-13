@@ -194,20 +194,29 @@ footer.bg-primary {
 }
 
 .categoria-header {
-  background: linear-gradient(to right, 	#808080 0%, #ffffff 100%); /* gris más oscuro */
-  color: white; /* letras blancas */
+  background-color: #063254;
+  color: white;
   padding: 10px 20px;
   margin-bottom: 20px;
   font-size: 1.8rem;
   font-weight: bold;
   border-radius: 8px;
   text-align: left;
-
-  /* Sin hover */
-  transition: none;
 }
 
 .categoria-header:hover {
   transform: none;
   box-shadow: none;
+}
+
+.logo-marca {
+  height: 60px; /* Ajusta el tamaño para que sea parejo y más chico que las cards */
+  object-fit: contain;
+  filter: grayscale(1); /* Opcional: blanco y negro */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-marca:hover {
+  transform: scale(1.1); /* Agranda un poquito al pasar el mouse */
+  filter: grayscale(0); /* Vuelve a color */
 }

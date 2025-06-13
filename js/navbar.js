@@ -8,11 +8,11 @@ const paginas = [
 
 function crearNavbar() {
   const navbarLinks = document.getElementById("navbarLinks");
-  navbarLinks.innerHTML = ""; // Limpiar contenido previo
+  navbarLinks.innerHTML = ""; 
 
-  const logueado = localStorage.getItem("logueado") === "true";
+  const logueado = sessionStorage.getItem("usuarioLogueado") !== null;
 
-  // Agregar páginas comunes
+
   paginas.forEach(p => {
     const li = document.createElement("li");
     li.classList.add("nav-item");
@@ -41,9 +41,10 @@ function crearNavbar() {
 
   if (logueado) {
     aAuth.textContent = "Cerrar sesión";
-    aAuth.addEventListener("click", () => {
-      localStorage.removeItem("logueado");
-      window.location.href = "index.html";;
+    aAuth.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    sessionStorage.removeItem("usuarioLogueado");
+    window.location.href = "index.html";;
     });
   } else {
     aAuth.textContent = "Iniciar sesión";

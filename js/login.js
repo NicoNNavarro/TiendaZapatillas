@@ -1,19 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("#loginForm");
+document.addEventListener("DOMContentLoaded", () => {
+  const loginForm = document.getElementById("loginForm");
 
-  form.addEventListener("submit", function (e) {
+  loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const email = document.querySelector("#email").value;
-    const password = document.querySelector("#password").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-    // Aquí podés validar con valores fijos o más adelante contra localStorage si hacés registro
+    // Validación básica simulada
     if (email && password) {
-      // Simulación de login exitoso
-      localStorage.setItem("logueado", "true");
+      sessionStorage.setItem("usuarioLogueado", email); 
       window.location.href = "index.html";
     } else {
-      alert("Email y contraseña requeridos");
+      alert("Email o contraseña incorrectos.");
     }
   });
 });
