@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    // Validación básica simulada
+    // Validación básica 
     if (email && password) {
       sessionStorage.setItem("usuarioLogueado", email); 
       window.location.href = "index.html";

@@ -26,42 +26,39 @@ nav {
   }
 
 
-  /* Cambiar fondo: puede ser color o imagen */
+
 body {
   background: url('../img/fondo1.jpg') no-repeat center center fixed;
   background-size: cover;
-  /* fallback color si la imagen no carga */
-  background-color: white; /* celeste */
-  color: white; /* texto blanco para buen contraste */
+
+  background-color: white; 
+  color: white; 
 }
 
-/* Cambiar color principal de Bootstrap (navbar) */
-/* Sobrescribimos variables CSS de Bootstrap */
 
 :root {
-  --bs-primary: #2353f1; /* celeste */
+  --bs-primary: #2353f1; 
   --bs-primary-rgb: 13, 202, 240;
 }
 
-/* Personalización extra */
+
 
 .navbar-brand img {
-  filter: brightness(0) invert(1); /* si tu logo es oscuro, se vuelve blanco */
+  filter: brightness(0) invert(1); 
 }
 
-/* Card con fondo blanco y texto negro */
+
 .card {
   background-color: white;
   color: black;
 }
 
 #carouselCoolShoes .carousel-item {
-  height: 500px; /* ajustá según lo que prefieras */
+  height: 500px; 
   overflow: hidden;
   position: relative;
 }
 
-/* Asegura que la imagen se recorte bien */
 #carouselCoolShoes .carousel-item img {
   height: 100%;
   width: 100%;
@@ -101,7 +98,7 @@ body {
 }
 
 .custom-navbar {
-  background-color: #2353f1 !important; /* o el celeste que uses */
+  background-color: #2353f1 !important; 
 }
 
 footer.bg-primary {
@@ -116,10 +113,6 @@ footer.bg-primary {
   color: black;
 }
 
-
-/* Esta aparte es el estilo de la botonera de cantidad*/
-
-/* Cards con ancho y alto fijo, y margen para separación */
 .card-custom {
   width: 320px;
   height: 420px;
@@ -168,7 +161,7 @@ footer.bg-primary {
   border: 1px solid #ced4da;
   border-radius: 6px;
   font-size: 16px;
-  pointer-events: none; /* no editable */
+  pointer-events: none; 
   background-color: #f8f9fa;
   user-select: none;
 }
@@ -178,7 +171,7 @@ footer.bg-primary {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px; /* separación más grande entre cards */
+  gap: 30px; 
 }
 
 .btn-disminuir,
@@ -186,11 +179,11 @@ footer.bg-primary {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;  /* para que el signo resalte */
-  font-size: 1.2rem;  /* ajustá el tamaño si querés */
-  padding: 0.25rem 0; /* menos padding horizontal para que no quede muy ancho */
-  width: 30px;        /* o el ancho que tengas en tus botones */
-  height: 30px;       /* que quede cuadrado */
+  font-weight: bold;  
+  font-size: 1.2rem; 
+  padding: 0.25rem 0; 
+  width: 30px;      
+  height: 30px;    
 }
 
 .categoria-header {
@@ -210,13 +203,13 @@ footer.bg-primary {
 }
 
 .logo-marca {
-  height: 60px; /* Ajusta el tamaño para que sea parejo y más chico que las cards */
+  height: 60px; 
   object-fit: contain;
-  filter: grayscale(1); /* Opcional: blanco y negro */
+  filter: grayscale(1); 
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .logo-marca:hover {
-  transform: scale(1.1); /* Agranda un poquito al pasar el mouse */
-  filter: grayscale(0); /* Vuelve a color */
+  transform: scale(1.1); 
+  filter: grayscale(0); 
 }
