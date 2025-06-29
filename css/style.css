@@ -1,31 +1,15 @@
-nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  nav a:hover {
-    color: #fca311;
-  }
-
-  form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    margin: auto;
-  }
-  input, button {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-  }
-
-
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+}
+input, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
 
 body {
   background: url('../img/fondo1.jpg') no-repeat center center fixed;
@@ -35,18 +19,14 @@ body {
   color: white; 
 }
 
-
 :root {
   --bs-primary: #2353f1; 
   --bs-primary-rgb: 13, 202, 240;
 }
 
-
-
 .navbar-brand img {
   filter: brightness(0) invert(1); 
 }
-
 
 .card {
   background-color: white;
@@ -64,8 +44,6 @@ body {
   width: 100%;
   object-fit: cover;
 }
-
-
 
 .running-header {
   background-image: url('../img/fondo01.jpg');
@@ -98,11 +76,11 @@ body {
 }
 
 .custom-navbar {
-  background-color: #2353f1 !important; 
+  background-color: #063254 !important; 
 }
 
 footer.bg-primary {
-  background-color: #2353f1 !important;
+  background-color: #063254 !important;
 }
 
 .text-azul {
@@ -114,9 +92,11 @@ footer.bg-primary {
 }
 
 .card-custom {
-  width: 320px;
+  width: 100%; /* ocupar todo el ancho de la columna */
   height: 420px;
-  margin: 0 15px 30px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Imagen en card con altura fija y que no se distorsione */
@@ -190,7 +170,8 @@ footer.bg-primary {
   background-color: #063254;
   color: white;
   padding: 10px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 5px;   /* ajustado para acercar título arriba */
   font-size: 1.8rem;
   font-weight: bold;
   border-radius: 8px;
@@ -212,4 +193,170 @@ footer.bg-primary {
 .logo-marca:hover {
   transform: scale(1.1); 
   filter: grayscale(0); 
+}
+
+.fondo-franja {
+  background-image: url('../img/fondo-franja2.webp'); /* Ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%; /* Ajusta según cuánto querés que baje */
+  z-index: 1;
+  opacity: 0.9; /* Opcional: si querés que no tape tanto */
+}
+
+/* Título */
+.titulo-beneficios {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Cards */
+.beneficio-card {
+  background-color: #063254;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beneficio-card i {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.beneficio-card h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.beneficio-card p {
+  margin: 0;
+}
+
+.beneficio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.footer-completo {
+  background-color: #063254; /* Azul oscuro */
+  color: white;
+}
+
+.footer-completo a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-completo a:hover {
+  color: #fca311; /* Naranja o el color que uses para hover */
+}
+
+.footer-completo h5 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-completo ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-completo i {
+  font-size: 1.4rem;
+}
+
+.footer-completo .bi {
+  transition: transform 0.3s;
+}
+
+.footer-completo .bi:hover {
+  transform: scale(1.2);
+  color: #fca311;
+}
+
+.footer-completo hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Ajuste botón ver más y espacios entre categorías */
+.btn-ver-mas {
+  background-color: transparent;
+  color: #2353f1;
+  border: 2px solid #2353f1;
+  padding: 8px 24px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+
+  margin-top: 10px;   /* menos espacio arriba del botón */
+  margin-bottom: 5px; /* menos espacio abajo del botón */
+}
+
+.btn-ver-mas:hover {
+  background-color: #2353f1;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-ver-mas:active {
+  transform: scale(0.96);
+}
+
+.cards-container.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.container {
+  margin-bottom: 5px; /* menos espacio abajo de cada sección */
+}
+.card-custom .card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }

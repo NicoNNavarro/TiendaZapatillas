@@ -1,89 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CoolShoes</title>
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
-
 <body>
- <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logo01.png" alt="CoolShoes" height="40" />
-        CoolShoes
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/5491123456789" class="whatsapp-float" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo01.png" alt="CoolShoes" height="40">
+      CoolShoes
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto" id="navbarLinks">
-      </ul>
-  </div>
+      <ul class="navbar-nav ms-auto" id="navbarLinks"></ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-
+<!-- Carousel -->
 <div id="carouselCoolShoes" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/fondo01.jpg" class="d-block w-100" alt="Banner 1" />
-    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0 start-0 w-100 h-100">
-      <h1 class="display-4 text-white fw-bold">Bienvenido a CoolShoes</h1>
-      <p class="lead text-white">Encontrá tu estilo en cada paso.</p>
-    </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/fondo02.jpg" class="d-block w-100" alt="Banner 2" />
+      <img src="img/fondo01.jpg" class="d-block w-100" alt="Banner">
+      <div class="carousel-caption">
+        <h1 class="display-4 text-white fw-bold">Bienvenido a CoolShoes</h1>
+        <p class="lead text-white">Encontrá tu estilo en cada paso.</p>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="img/fondo03.jpg" class="d-block w-100" alt="Banner 3" />
+      <img src="img/fondo02.jpg" class="d-block w-100" alt="Banner">
+    </div>
+    <div class="carousel-item">
+      <img src="img/fondo03.jpg" class="d-block w-100" alt="Banner">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselCoolShoes" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
+    <span class="carousel-control-prev-icon"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselCoolShoes" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
+    <span class="carousel-control-next-icon"></span>
   </button>
 </div>
 
-
+<!-- Marcas -->
 <main class="container text-center py-4">
-  <h1 class="mb-3 text-azul">Contamos con todas las marcas👟</h1>
+  <h1 class="mb-3 text-azul">Contamos con todas las marcas 👟</h1>
   <p class="lead text-dark mb-4">Si lo que buscás son zapatillas, acá las tenemos.</p>
 
   <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
-    <img src="img/logo/nike.png" class="logo-marca" alt="Nike" />
-    <img src="img/logo/adidas.png" class="logo-marca" alt="Adidas" />
-    <img src="img/logo/puma.png" class="logo-marca" alt="Puma" />
-    <img src="img/logo/under.png" class="logo-marca" alt="Under Armour" />
-    <img src="img/logo/NB.png" class="logo-marca" alt="New Balance" />
-    <img src="img/logo/joma.png" class="logo-marca" alt="Joma" />
-    <img src="img/logo/fila.PNG" class="logo-marca" alt="Fila" />
-    <img src="img/logo/asics.jpg" class="logo-marca" alt="Asics" />
-    <img src="img/logo/kappa.PNG" class="logo-marca" alt="Kappa" />
+    <img src="img/logo/nike.png" class="logo-marca" alt="Nike">
+    <img src="img/logo/adidas.png" class="logo-marca" alt="Adidas">
+    <img src="img/logo/puma.png" class="logo-marca" alt="Puma">
+    <img src="img/logo/under.png" class="logo-marca" alt="Under Armour">
+    <img src="img/logo/NB.png" class="logo-marca" alt="New Balance">
+    <img src="img/logo/joma.png" class="logo-marca" alt="Joma">
+    <img src="img/logo/fila.PNG" class="logo-marca" alt="Fila">
+    <img src="img/logo/asics.jpg" class="logo-marca" alt="Asics">
+    <img src="img/logo/kappa.PNG" class="logo-marca" alt="Kappa">
   </div>
 </main>
 
+<!-- Productos Running -->
+<section class="container mb-3">
+  <div class="categoria-header">Running</div>
+  <div id="productosRunning" class="row cards-container"></div>
+  <div class="text-center">
+    <a href="catRunning.html" class="btn-ver-mas">Ver más</a>
+  </div>
+</section>
 
+<!-- Productos Fútbol -->
+<section class="container mb-3">
+  <div class="categoria-header">Fútbol</div>
+  <div id="productosFutbol" class="row cards-container"></div>
+  <div class="text-center">
+    <a href="catFutbol.html" class="btn-ver-mas">Ver más</a>
+  </div>
+</section>
 
-  <section id="productosPorCategoria" class="container mt-5">
-    <section id="productosPorCategoria" class="row justify-content-center">
-    <!-- Aqca se cargarán las cards  -->
-    </section>
-  </section>
+<!-- Productos Urbanas -->
+<section class="container mb-3">
+  <div class="categoria-header">Urbanas</div>
+  <div id="productosUrbanas" class="row cards-container"></div>
+  <div class="text-center">
+    <a href="catUrbanas.html" class="btn-ver-mas">Ver más</a>
+  </div>
+</section>
+
+<!-- Beneficios -->
+<section class="py-5 beneficios position-relative">
+  <div class="fondo-franja"></div>
+  <div class="container text-center position-relative">
+    <h2 class="mb-5 titulo-beneficios">¿Por qué elegir CoolShoes?</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="beneficio-card">
+          <i class="bi bi-truck display-4"></i>
+          <h5>Envío rápido</h5>
+          <p>Entregas en 24/48 hs en todo el país.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="beneficio-card">
+          <i class="bi bi-shield-check display-4"></i>
+          <h5>Garantía</h5>
+          <p>Productos 100% originales.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="beneficio-card">
+          <i class="bi bi-credit-card display-4"></i>
+          <h5>Pagá como quieras</h5>
+          <p>Hasta 12 cuotas sin interés.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="my-4 py-3 text-center">
 <h2 class="fw-bold mb-4" style="font-size: 2rem; color: #063254;">Nuestros locales</h2>
@@ -126,18 +175,45 @@
   </div>
 </section>
 
-
-  <footer class="footer bg-primary text-white text-center py-2">
-    <div class="container">
-      <small>&copy; 2025 CoolShoes - Todos los derechos reservados</small>
+<!-- Footer -->
+<footer class="footer-completo">
+  <div class="container py-4">
+    <div class="row justify-content-between">
+      <div class="col-md-4 mb-4">
+        <a href="index.html" class="d-flex align-items-center mb-3">
+          <img src="img/logo01.png" alt="CoolShoes" height="50" style="filter: brightness(0) invert(1);">
+          <span class="ms-2 h5">CoolShoes</span>
+        </a>
+        <p>Tu tienda online de zapatillas urbanas, deportivas y más. Encontrá tu estilo en cada paso.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5>Contacto</h5>
+        <p><i class="bi bi-geo-alt"></i> Av. Corrientes 1234, Buenos Aires</p>
+        <p><i class="bi bi-telephone"></i> <a href="tel:+541123456789">+54 11 2345-6789</a></p>
+        <p><i class="bi bi-envelope"></i> <a href="mailto:contacto@coolshoes.com">contacto@coolshoes.com</a></p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h5>Seguinos</h5>
+        <div class="d-flex gap-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
     </div>
-  </footer>
+    <hr class="border-light">
+    <div class="text-center">
+      <small>&copy; 2025 CoolShoes. Todos los derechos reservados.</small>
+    </div>
+  </div>
+</footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/contadorCarrito.js"></script>
-  <script src="js/cargarProductos.js"></script>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/contadorCarrito.js"></script>
+<script src="js/cargarProductos.js"></script>
 
 </body>
 </html>
